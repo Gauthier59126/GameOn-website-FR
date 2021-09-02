@@ -40,7 +40,7 @@ function validateSubmit(){
 
 // Close validation modal
 function closeSubmitModal(){
-  validateSubmit();
+  modalValidate.style.display = "none";
   launchModal();
 }
 
@@ -52,6 +52,7 @@ function launchModal() {
 // close modal
 function closeModal(){
   modalbg.style.display = "none";
+  document.querySelector(".form1").reset();
 }
 
 // validation fonction for openning validate modal

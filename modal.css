@@ -43,8 +43,8 @@ img {
     float: left;
 }
 .main-navbar {
-    float: right;
-
+  float: right;
+  margin-right: 10px;
 }
 .topnav a {
   float: left;
@@ -86,7 +86,7 @@ img {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
-    right: 0;
+    right: 10px;
     top: 0;
   }
   .topnav.responsive a {
@@ -104,6 +104,10 @@ img {
     float: right;
     display: block;
     margin-top: -15px;
+  }
+
+  .topnav.responsive a.icon {
+    margin-top: 15px;
   }
 
   .main-navbar{
@@ -209,6 +213,16 @@ input {
   padding: 8px;
   border: 0.8px solid #ccc;
   outline: none;
+}
+
+.modal-txt{
+  margin: auto;
+  height: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
 }
 
 /*
@@ -579,6 +593,17 @@ footer {
 
 @media screen and (max-width: 375px){
 
+  .topnav{
+    width: 100%;
+    margin-top: 0;
+    top: 0;
+    padding-top: 10px;
+    position: fixed;
+    z-index: 9;
+    background-color: white;
+    margin-left: 0
+  }
+
   .hero-headline{
     font-size: 4rem;
   }
@@ -586,6 +611,28 @@ footer {
   .hero-text{
     font-size: 1.3rem;
     width: 80%;
+  }
+
+  .hero-content{
+    padding-top: 70px;
+  }
+
+  .bground, .bground2{
+    margin-top: 50px;
+  }
+
+  .fa.fa-bars{
+    color: red;
+  }
+
+  .icon:hover .fa.fa-bars{
+    color: white;
+  }
+
+  .img{
+    width: 170px;
+    margin-left: 20px;
+    margin-top: 11px;
   }
 }
 
