@@ -172,7 +172,7 @@ function validateTournament(){
   return true; 
 }
 
-// Radios
+// Fonction des radios
 function validateCities(){
   let errorMessage = document.querySelector(".error.radios");
   
@@ -189,7 +189,7 @@ function validateCities(){
   return false;
 }
  
-// CheckBox
+// fonction de la CheckBox
 function validateConditions(){
 
   let errorMessage = document.querySelector(".error.checkbox");
