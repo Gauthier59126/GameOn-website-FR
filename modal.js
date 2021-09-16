@@ -65,7 +65,7 @@ function validateAll (event) {
   let isTournamentValid = validateTournament();
   let isRadioChecked = validateCities();
   let isCheckboxChecked = validateConditions();
-  if(isFirstNameValid && isLastNameValid && isEmailValid && isBirthDateValid && isTournamentValid){
+  if(isFirstNameValid && isLastNameValid && isEmailValid && isBirthDateValid && isTournamentValid && isRadioChecked &&isCheckboxChecked ){
     closeModal();
     modalValidate.style.display = "block";
     
